@@ -1,0 +1,8 @@
+body{ margin: 0 auto;}
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; outline: none; }
+
+.arc_waterfall{ width: 800px; margin: 0 auto; position: relative; background: #fff;}
+.arc_waterfall .arc_waterfall_box{ padding: 0 7.5px 15px;float: left;}
+.arc_waterfall .arc_waterfall_pic{ border: 1px #ddd solid; background: #fff; box-shadow: 0 0 5px rgba(0,0,0,.1); padding: 6px; border-radius: 5px; }
+.arc_waterfall .arc_waterfall_pic img{ width: 100%; height: auto;}
+.arc_waterfall:after{ content: ''; display: table; clear: both;}

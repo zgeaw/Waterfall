@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>瀑布流JQ插件</title>
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="base.css" />
+		<script src="jquery.min.js"></script>
+		<script src="JQarc_waterfall.js"></script>
+		<script>
+			$(function() {
+				$.Waterfall({
+					columns:3//列数
+				});
+				$('#btn3').bind('click',function(){	//三列显示
+					$(this).addClass('active').siblings().removeClass('active');
+					$.Waterfall({
+						columns:3//列数
+					});
+				});
+				$('#btn4').bind('click',function(){	//四列显示
+					$(this).addClass('active').siblings().removeClass('active');				
+					$.Waterfall({
+						columns:4//列数
+					});
+				});
+				$('#btn5').bind('click',function(){	//五列显示
+					$(this).addClass('active').siblings().removeClass('active');				
+					$.Waterfall({
+						columns:5//列数
+					});
+				});
+				$('#btn6').bind('click',function(){	//六列显示
+					$(this).addClass('active').siblings().removeClass('active');				
+					$.Waterfall({
+						columns:6//列数
+					});
+				});
+			});
+		</script>
+		<style>
+			.btn{ margin: 30px auto; text-align: center;}
+			.btn button{  display: inline-block; border: 0; height: 36px; line-height: 36px; border-radius: 5px;
+			font-family: "microsoft yahei"; background:rgba(255,0,0,.4); color: #fff; padding: 0 20px; cursor:pointer; transition: all .3s;}
+			.btn button#btn4{ background:rgba(255,0,0,.6);}
+			.btn button#btn5{background:rgba(255,0,0,.8);}
+			.btn button#btn6{background:rgba(255,0,0,1);}
+			.btn button:hover,
+			.btn button:focus,
+			.btn button.active{ box-shadow: 0 0 5px rgba(0,0,0,.3); transform: scale(1.05); background:green !important;}
+		</style>
+	</head>
+
+	<body>
+		<div class="btn">	
+			<button type="button" id="btn3" class="active">三列显示</button>
+			<button type="button" id="btn4">四列显示</button>
+			<button type="button" id="btn5">五列显示</button>
+			<button type="button" id="btn6">六列显示</button>
+		</div>
+		<div class="arc_waterfall">
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz1.png">
+				</div>
+			</div>
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz2.png">
+				</div>
+			</div>
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz3.png">
+				</div>
+			</div>
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz4.png">
+				</div>
+			</div>
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz5.png">
+				</div>
+			</div>
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz6.png">
+				</div>
+			</div>
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz7.png">
+				</div>
+			</div>
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz8.png">
+				</div>
+			</div>
+			<div class="arc_waterfall_box">
+				<div class="arc_waterfall_pic">
+					<img src="images/fonz9.png">
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
